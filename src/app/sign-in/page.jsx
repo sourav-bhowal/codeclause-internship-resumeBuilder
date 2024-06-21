@@ -44,6 +44,7 @@ const SignInPage = () => {
         }
 
         if (response?.url) {
+            setIsSubmitting(false);
             router.replace("/dashboard")
         }
     };
